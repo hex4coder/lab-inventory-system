@@ -31,8 +31,26 @@ class UserSeeder extends Seeder
 
         // laboran
         $laboran = new User();
-        $laboran->name = "Laboran";
-        $laboran->email = "laboran@lis.smkncampalagian.sch.id";
+        $laboran->name = "Laboran TJKT";
+        $laboran->email = "laboran.tjkt@lis.smkncampalagian.sch.id";
+        $laboran->password = bcrypt("12345678");
+        $laboran->role = 2;
+        $laboran->save();
+
+
+        // laboran
+        $laboran = new User();
+        $laboran->name = "Laboran MPLB";
+        $laboran->email = "laboran.mplb@lis.smkncampalagian.sch.id";
+        $laboran->password = bcrypt("12345678");
+        $laboran->role = 2;
+        $laboran->save();
+
+
+        // laboran
+        $laboran = new User();
+        $laboran->name = "Laboran AKL";
+        $laboran->email = "laboran.akl@lis.smkncampalagian.sch.id";
         $laboran->password = bcrypt("12345678");
         $laboran->role = 2;
         $laboran->save();
