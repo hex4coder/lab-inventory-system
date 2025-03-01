@@ -31,6 +31,7 @@ class UserSeeder extends Seeder
 
         // laboran
         $laboran = new User();
+        $laboran->id = 3;
         $laboran->name = "Laboran TJKT";
         $laboran->email = "laboran.tjkt@lis.smkncampalagian.sch.id";
         $laboran->password = bcrypt("12345678");
